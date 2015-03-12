@@ -1,0 +1,182 @@
+div {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0px auto 50px auto;
+  width: 50%;
+}
+
+.chart-container {
+  position: relative;
+  height: 400px;
+}
+
+.chart {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.chart .label {
+  padding: 0 0 0 10px;
+  top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chart .label-text {
+  padding-left: 15px;
+  line-height: 12px;
+}
+
+.line.chart .dot {
+  background-color: #fbb977;
+  border: 2px white solid;
+}
+
+.line.chart .dot.hover {
+  background-color: skyblue;
+}
+
+.line.chart .line {
+  background-color: #fbb977;
+}
+
+.bar.chart .label {
+  border: 1px solid #eee;
+  padding: 0;
+}
+.bar.chart .bar {
+  background-color: #fbb977;
+  padding: 0 0 0 10px;
+}
+
+.bar.chart .label {
+  font-size: 0.56em;
+  padding: 0 0 0 10px;
+}
+
+.bar.chart .bar.hover {
+  background-color: skyblue;
+}
+
+.bar2d.chart .bar {
+  background-color: #fbb977;
+}
+
+.bar2d.chart .bar.hover {
+  background-color: skyblue;
+}
+
+.bar2d.chart .label-title {
+  font-size: 0.5em;
+}
+
+.bubble.chart .node {
+  border: 1px solid silver;
+  background-color: #fbb977;
+}
+
+.bubble.chart .node.hover {
+  border: 1px solid silver;
+  background-color: skyblue;
+}
+
+.bubble.chart .label-container {
+  line-height: 0.5em;
+}
+
+.bubble.chart .value {
+  font-size: 0.5em;
+}
+
+.bubble.chart .top{
+  display: none;
+}
+
+#visu-bulle {
+  height: 600px;
+}
+
+#visu-retweets {
+  height: 350px;
+}
+
+#visu-evenements {
+  height: 200px;
+}
+
+#visu-horaire, #visu-mensuel {
+  height: 300px;
+  border: 1px solid silver;
+}
+
+#visu-reponses1, #visu-reponses2 {
+  width: 50%;
+  float: left;
+}
+
+#visu-reponses {
+  height: 400px;
+}
+
+.tweet {
+  border: 1px solid silver;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+.tweet img {
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+}
+
+.tweet .avatar, .tweet .handle {
+  float: left;
+}
+
+.tweet .handle {
+  padding-left: 10px;
+}
+
+.tweet .text {
+  clear: both;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+
+.chart-tooltip {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 4px;
+  margin-top: -30px;
+  margin-left: 5px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 0px auto 50px auto;
+    width: 80%;
+  }
+
+  #visu-reponses1, #visu-reponses2 {
+    height: 100%;
+    width: 100%;
+  }
+
+  #visu-reponses {
+    height: 300px;
+  }
+
+  #visu-bulle {
+    height: 300px;
+  }
+}
