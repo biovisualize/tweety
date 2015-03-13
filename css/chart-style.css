@@ -2,6 +2,13 @@ div {
   box-sizing: border-box;
 }
 
+.description {
+  font-weight: bold;
+  font-size: 0.6em;
+  margin: 20px 0 20px 0;
+  line-height: 2em;
+}
+
 .container {
   margin: 0px auto 50px auto;
   width: 50%;
@@ -15,10 +22,10 @@ div {
 .chart {
   position: relative;
   padding-bottom: 4px;
+  font-family: serif;
 }
 
 .chart .label {
-  padding: 0 0 0 10px;
   top: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -30,13 +37,13 @@ div {
   line-height: 12px;
 }
 
+.chart .hover {
+  border: 3px solid black !important;
+}
+
 .line.chart .dot {
   background-color: #fbb977;
   border: 2px white solid;
-}
-
-.line.chart .dot.hover {
-  background-color: skyblue;
 }
 
 .line.chart .line {
@@ -47,26 +54,19 @@ div {
   border: 1px solid #eee;
   padding: 0;
 }
+
 .bar.chart .bar {
   background-color: #fbb977;
   padding: 0 0 0 10px;
 }
 
 .bar.chart .label {
-  font-size: 0.56em;
+  font-size: 0.7em;
   padding: 0 0 0 10px;
-}
-
-.bar.chart .bar.hover {
-  background-color: skyblue;
 }
 
 .bar2d.chart .bar {
   background-color: #fbb977;
-}
-
-.bar2d.chart .bar.hover {
-  background-color: skyblue;
 }
 
 .bar2d.chart .label-title {
@@ -78,25 +78,16 @@ div {
   background-color: #fbb977;
 }
 
-.bubble.chart .node.hover {
-  border: 1px solid silver;
-  background-color: skyblue;
-}
-
-.bubble.chart .label-container {
-  line-height: 0.5em;
-}
-
 .bubble.chart .value {
   font-size: 0.5em;
 }
 
-.bubble.chart .top{
+.bubble.chart .top {
   display: none;
 }
 
 #visu-bulle {
-  height: 600px;
+  height: 800px;
 }
 
 #visu-retweets {
@@ -128,9 +119,9 @@ div {
   font-size: 12px;
   line-height: 14px;
   margin-bottom: 20px;
-  -webkit-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
-  box-shadow: 1px 2px 4px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .tweet img {
@@ -161,10 +152,24 @@ div {
   margin-left: 5px;
 }
 
+.legend {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  margin: 0 2px 0 6px;
+}
+
 @media (max-width: 1000px) {
   .container {
     margin: 0px auto 50px auto;
     width: 80%;
+  }
+
+  .bar2d.chart .label {
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: 0 40%;
+    transform: rotate(-90deg);
+    transform-origin: 0;
   }
 
   #visu-reponses1, #visu-reponses2 {
