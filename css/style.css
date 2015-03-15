@@ -1,0 +1,538 @@
+body {
+	 padding: 0px 0 25px 0;
+	 font-family: "Open Sans";
+	 font-weight: 400;
+	 font-style: normal;
+	 line-height: 0px;
+	 background-color: white;
+}
+
+article {
+	 margin: 0 auto;
+	 width: 264px;
+	 -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+	 background-size: cover;
+	 background-attachment: local;
+	 background-repeat: no-repeat;
+	 font-family: "Open Sans";
+	 font-weight: 400;
+	 font-style: normal;
+	 line-height: 21px;
+}
+
+h1 {
+	 font-family: "mf-rubrik-202426";
+	 text-align: right;
+	 text-transform: capitalize;
+	 padding: 0px;
+	 color: rgba(255, 255, 255, 1);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 font-size: 1.6em;
+	 line-height: 1em;
+	 letter-spacing: -1px;
+}
+
+p.intro {
+	 font-family: "Georgia W01 Regular";
+	 border-top: 1px;
+	 border-bottom: 1px;
+	 padding: 0px 0px 15px 0px;
+	 text-align: left;
+	 border-style: solid;
+	 margin: 1.038em 0px;
+	 color: rgba(0, 0, 0, 1);
+	 border-width: 0px 0px 1px 0px;
+	 line-height: 1.3em;
+	 font-size: 1em;
+}
+
+p {
+	 font-size: 16px;
+	 line-height: 22px;
+	 color: rgba(0, 0, 0, 1);
+	 margin: 0px 0px 1.421em 0px;
+	 font-family: "Open Sans";
+	 text-align: left;
+	 font-weight: 400;
+	 font-style: normal;
+}
+
+h2 {
+	 font-family: "mf-rubrik-202426";
+	 margin: 0px 0px 0.931em 0px;
+	 text-transform: uppercase;
+	 padding: 20px 0px 0px 0px;
+	 font-size: 20px;
+	 line-height: 22px;
+	 color: rgba(0, 0, 0, 1);
+}
+
+p.pullquote {
+	 padding-left: 10px;
+	 border-style: solid;
+	 border-left-width: 3px;
+	 color: rgba(51, 51, 51, 1.00);
+	 font-size: 1em;
+	 line-height: 1.421em;
+	 margin: 0px 0px 1.421em 0px;
+}
+
+section.main-with-sidebar:before {
+	 content: "";
+	 display: table;
+}
+
+section.main-with-sidebar:after {
+	 content: "";
+	 display: table;
+	 clear: both;
+}
+
+section.main-with-sidebar {
+	 margin: 0 auto;
+	 width: auto;
+}
+
+div.div-main {
+	 float: left;
+	 width: 75%;
+	 text-align: center;
+	 margin: 0;
+	 -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+
+aside.sidebar {
+	 float: right;
+	 width: 25%;
+	 margin: 0;
+	 -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+
+div.image-media:before {
+	 content: "";
+	 display: table;
+}
+
+div.image-media:after {
+	 content: "";
+	 display: table;
+	 clear: both;
+}
+
+div.image-media {
+	 width: auto;
+	 text-align: left;
+	 margin: 0;
+}
+
+img.image-media-left {
+	 max-width: 100%;
+	 float: left;
+	 margin: 0 1em 1em 0;
+}
+
+h3 {
+	 margin-bottom: 0.819em;
+	 font-family: "Open Sans";
+	 text-transform: none;
+	 line-height: 15px;
+	 font-size: 14px;
+	 font-weight: 700;
+	 font-style: normal;
+}
+
+p.description {
+	 font-size: 13px;
+	 line-height: 20px;
+}
+
+nav.menu-nav {
+	 margin: 0 auto;
+	 height: 45px;
+	 background-color: rgba(204, 0, 0, 1);
+	 color: rgba(255, 255, 255, 1);
+}
+
+ul.menu {
+	 margin: 0 0 1em 0;
+	 font-size: 16px;
+	 list-style: none;
+}
+
+ul.menu-nested {
+	 margin: 0 0 0em 2em;
+	 font-size: 16px;
+	 color: #ccc;
+	 list-style: none;
+}
+
+div.testimonial {
+	 margin: 0 auto 1em auto;
+	 width: auto;
+	 text-align: center;
+}
+
+img.testimonial-avatar {
+	 -webkit-border-radius: 50%;
+	 -o-border-radius: 50%;
+	 -moz-border-radius: 50%;
+	 -ms-border-radius: 50%;
+	 max-width: 100%;
+	 width: 120px;
+	 border-radius: 50%;
+	 display: block;
+	 margin: 0 auto 10px auto;
+}
+
+h4.testimonial-name {
+	 font-size: 1.1em;
+	 text-align: center;
+	 margin: 0 0 4px 0;
+}
+
+p.testimonial-title {
+	 margin: 0 0 1em 0em;
+	 text-align: center;
+	 font-size: 1em;
+}
+
+div.testimonial-content {
+	 margin: 0 auto 1em auto;
+	 text-align: center;
+	 padding: 0.5em;
+	 background-color: #ffffff;
+}
+
+p.testimonial-text {
+	 text-align: center;
+	 color: #666;
+}
+
+p.testimonial-text:last-child {
+	 margin-bottom: 0;
+}
+
+section.slice:before {
+	 content: "";
+	 display: table;
+}
+
+section.slice:after {
+	 content: "";
+	 display: table;
+	 clear: both;
+}
+
+section.slice {
+	 background: #dedede;
+	 text-align: center;
+	 margin: 0;
+	 padding: 3%;
+	 width: auto;
+}
+
+img.wide {
+	 max-width: 100%;
+	 clear: none;
+	 padding: 20px 0px;
+	 margin: 0px 53px;
+}
+
+img.square {
+	 max-width: 100%;
+	 float: none;
+	 padding: 0px 0px 20px 0px;
+}
+
+.header {
+	 text-align: center;
+	 padding: .1em 0;
+	 background-color: rgba(0, 0, 0, 1);
+	 background-image: url(http://ici.radio-canada.ca/nouvelles/infographies/deniscoderre_tweets/06193320.jpg);
+	 background-position: right center;
+	 height: 90px;
+	 background-size: 123%;
+	 background-attachment: local;
+	 background-repeat: no-repeat;
+}
+
+h1.intro-h1 {
+	 text-align: center;
+	 font-size: 36px;
+	 line-height: 1.2em;
+	 margin-bottom: 1em;
+	 background-image: url(http://media.salon.com/2014/04/canada-montreal-mayor.jpeg-620x412.jpg);
+}
+
+.header.masthead:before {
+	 content: "";
+	 display: table;
+}
+
+.header.masthead:after {
+	 content: "";
+	 display: table;
+	 clear: both;
+}
+
+.header.masthead {
+	 margin: 0 auto 0 auto;
+	 padding: 3%;
+}
+
+img.logo {
+	 max-width: 100%;
+	 width: 130px;
+	 float: left;
+}
+
+ul.masthead-ul {
+	 float: right;
+	 margin: 0 0 1em 0;
+}
+
+li.masthead-li {
+	 float: right;
+	 margin: 0 0 0 1em;
+	 line-height: 1em;
+	 font-size: 16px;
+	 list-style: none;
+}
+
+p.navbar {
+	 color: rgba(255, 255, 255, 1);
+	 font-family: mf-rubrik-202426;
+	 text-transform: uppercase;
+	 padding: 0px 0px 0px 20px;
+	 margin: 0px;
+	 line-height: 45px;
+	 text-align: left;
+}
+
+div.basic {
+	 margin: 0 auto;
+	 text-align: center;
+	 width: auto;
+}
+
+p.intromobile {
+	 font-family: "Open Sans";
+	 border-top: 1px;
+	 border-bottom: 1px;
+	 padding: 1.15em 1.154em 1.154em 6em;
+	 text-align: right;
+	 border-style: none;
+	 margin: 1.038em 0px;
+	 font-weight: 300;
+	 font-style: normal;
+	 color: rgba(255, 255, 255, 1);
+}
+
+p.soustitre {
+	 text-align: right;
+	 font-size: 1.1em;
+	 font-family: "Georgia W01 Regular";
+	 text-transform: inherit;
+	 color: rgba(255, 255, 255, 1);
+	 line-height: 1em;
+	 padding: 0px 0px 0px 120px;
+	 margin: 15px 0px 22.7360000610352px 0px;
+	 letter-spacing: -0.5px;
+	 border-color: inherit;
+}
+
+code {
+	 background-color: #f1f1f1;
+	 display: block;
+	 padding: 6px;
+	 margin-bottom: 20px;
+	 font-size: 15px;
+}
+
+img.standard {
+	 max-width: 100%;
+	 padding: 0px 0px 30px 0px;
+}
+
+blockquote {
+	 text-align: left;
+	 line-height: 22px;
+	 font-family: "Georgia W01 Regular";
+	 font-size: 20px;
+	 color: rgba(100, 125, 135, 1);
+	 padding: 10px 0px 0px 0px;
+}
+
+p.credit {
+	 margin: 20px 0px 10px 0px;
+	 font-size: 16px;
+	 line-height: 16px;
+	 font-family: "Open Sans";
+	 font-weight: 700;
+	 font-style: normal;
+	 text-transform: inherit;
+	 letter-spacing: -0.5px;
+	 padding: 0px;
+}
+
+p.credit-poste {
+	 font-size: 13px;
+	 line-height: 14px;
+	 font-family: "Open Sans";
+	 font-weight: 400;
+	 font-style: normal;
+	 margin: 0px 0px 40px 0px;
+	 color: rgba(85, 85, 85, 1);
+	 padding: 0px;
+}
+
+a {
+	 color: rgba(204, 0, 0, 1);
+}
+
+img {
+	 max-width: 100%;
+}
+
+p.credit-radcan {
+	 font-size: 14px;
+	 line-height: 16px;
+	 color: rgba(85, 85, 85, 1);
+	 text-align: left;
+}
+
+strong {
+	 font-family: "Open Sans";
+	 font-weight: 600;
+	 font-style: normal;
+	 font-size: 14px;
+	 line-height: 18px;
+}
+
+br {
+	 text-align: left;
+}
+
+@media screen and (min-width: 320px) {
+	 p.intromobile {
+	 color: rgba(0, 0, 0, 1);
+	 padding: 0px;
+	 text-align: left;
+	 font-size: 16px;
+	 line-height: 24px;
+}
+
+p.intro {
+	 font-size: 1em;
+	 line-height: 1.3em;
+}
+
+} @media screen and (min-width: 480px) {
+	 h1 {
+	 font-size: 2.5em;
+	 line-height: 1em;
+}
+
+article {
+	 width: 85%;
+}
+
+p.soustitre {
+	 padding: 0px 0px 0px 130px;
+}
+
+p.intro {
+	 font-size: 1em;
+	 line-height: 1.3em;
+}
+
+h2 {
+	 font-size: 22px;
+	 line-height: 24px;
+}
+
+} @media screen and (min-width: 768px) {
+	 article {
+	 width: 600px;
+}
+
+.header {
+	 height: 190px;
+}
+
+p.intro {
+	 margin: 18px 0px 30px 0px;
+	 padding: 15px 0px 25px 0px;
+	 line-height: 1.3em;
+	 font-size: 1.3em;
+}
+
+p.intromobile {
+	 margin: 16.61px 0px 16.6079998016357px 0px;
+}
+
+h1 {
+	 font-size: 3.5em;
+	 line-height: 1em;
+	 margin: 20px 0px 0px 0px;
+}
+
+p.soustitre {
+	 font-size: 24px;
+}
+
+p {
+	 line-height: 24px;
+	 font-size: 16px;
+}
+
+blockquote {
+	 font-size: 24px;
+	 line-height: 30px;
+}
+
+h2 {
+	 font-size: 24px;
+	 line-height: 26px;
+}
+
+} @media screen and (min-width: 1024px) {
+	 article {
+	 width: 700px;
+}
+
+.header {
+	 height: 300px;
+}
+
+h1 {
+	 font-size: 4.5em;
+	 line-height: 1em;
+	 margin: 50px 0px 0px 0px;
+}
+
+p.soustitre {
+	 font-size: 1.7em;
+	 line-height: 1em;
+	 letter-spacing: 0px;
+	 margin: 30px 0px 22.7360000610352px 0px;
+}
+
+blockquote {
+	 font-size: 26px;
+	 line-height: 34px;
+}
+
+h2 {
+	 font-size: 26px;
+	 line-height: 28px;
+}
+
+} 
