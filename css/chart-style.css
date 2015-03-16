@@ -2,13 +2,6 @@ div {
   box-sizing: border-box;
 }
 
-.description {
-  font-weight: bold;
-  font-size: 0.6em;
-  margin: 20px 0 20px 0;
-  line-height: 2em;
-}
-
 .container {
   margin: 0px auto 50px auto;
   width: 50%;
@@ -17,6 +10,7 @@ div {
 .chart-container {
   position: relative;
   height: 400px;
+  margin-bottom: 50px;
 }
 
 .chart {
@@ -30,6 +24,7 @@ div {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: "Open Sans";
 }
 
 .chart .label-text {
@@ -40,7 +35,6 @@ div {
 .chart .hover {
   border: 3px solid #4c4c4c !important;
 }
-
 .line.chart .dot {
   background-color: #fbb977;
   border: 2px white solid;
@@ -63,6 +57,13 @@ div {
 .bar.chart .label {
   font-size: 0.7em;
   padding: 0 0 0 10px;
+}
+
+.bar.chart .label-title {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0px 0px 20px 0px;
+  font-family: "Open Sans";
 }
 
 .bar2d.chart .bar {
@@ -152,11 +153,14 @@ div {
   margin-left: 5px;
 }
 
+.legend-container {
+  margin-bottom: 48px;
+}
 .legend {
   width: 1em;
   height: 1em;
   display: inline-block;
-  margin: 0 2px 0 6px;
+  margin: 0 2px 0 12px;
 }
 
 @media (max-width: 1000px) {

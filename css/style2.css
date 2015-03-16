@@ -4,7 +4,6 @@ body {
 	 font-weight: 400;
 	 font-style: normal;
 	 line-height: 0px;
-	 background-color: white;
 }
 
 article {
@@ -47,7 +46,7 @@ p.intro {
 	 border-width: 0px 0px 1px 0px;
 	 line-height: 1.3em;
 	 font-size: 1em;
-   border-color: rgba(190, 190, 190, 1);
+	 border-color: rgba(190, 190, 190, 1);
 }
 
 p {
@@ -56,9 +55,9 @@ p {
 	 color: rgba(0, 0, 0, 1);
 	 margin: 0px 0px 1.421em 0px;
 	 font-family: "Open Sans";
-	 text-align: left;
 	 font-weight: 400;
 	 font-style: normal;
+	 text-align: left;
 }
 
 h2 {
@@ -150,12 +149,12 @@ h3 {
 }
 
 p.description {
-  font-size: 14px;
-  line-height: 16px;
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-style: normal;
-  margin: 0px 0px 5px 0px;
+	 font-size: 14px;
+	 line-height: 16px;
+	 font-family: "Open Sans";
+	 font-weight: 600;
+	 font-style: normal;
+	 margin: 0px 0px 5px 0px;
 }
 
 nav.menu-nav {
@@ -236,7 +235,6 @@ section.slice:after {
 }
 
 section.slice {
-	 background: #dedede;
 	 text-align: center;
 	 margin: 15px 0 30px 0;
 	 padding: 3%;
@@ -260,9 +258,9 @@ img.square {
 	 padding: 0px 0px 20px 0px;
 }
 
-.header {
+header {
 	 text-align: center;
-	 padding: .1em 0;
+	 padding: 4em 0;
 	 background-color: rgba(0, 0, 0, 1);
 	 background-image: url(http://ici.radio-canada.ca/nouvelles/infographies/deniscoderre_tweets/06193320.jpg);
 	 background-position: right center;
@@ -280,18 +278,18 @@ h1.intro-h1 {
 	 background-image: url(http://media.salon.com/2014/04/canada-montreal-mayor.jpeg-620x412.jpg);
 }
 
-.header.masthead:before {
+header.masthead:before {
 	 content: "";
 	 display: table;
 }
 
-.header.masthead:after {
+header.masthead:after {
 	 content: "";
 	 display: table;
 	 clear: both;
 }
 
-.header.masthead {
+header.masthead {
 	 margin: 0 auto 0 auto;
 	 padding: 3%;
 }
@@ -430,6 +428,12 @@ br {
 	 text-align: left;
 }
 
+p.barchart-label {
+	 font-size: 12px;
+	 line-height: 15px;
+	 margin: 0px 0px 20px 0px;
+}
+
 @media screen and (min-width: 320px) {
 	 p.intromobile {
 	 color: rgba(0, 0, 0, 1);
@@ -479,7 +483,7 @@ section.slice {
 	 width: 600px;
 }
 
-.header {
+header {
 	 height: 280px;
 }
 
@@ -525,7 +529,7 @@ h2 {
 	 width: 700px;
 }
 
-.header {
+header {
 	 height: 280px;
 }
 
