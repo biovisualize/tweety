@@ -38,7 +38,7 @@ div {
 }
 
 .chart .hover {
-  border: 3px solid black !important;
+  border: 3px solid #4c4c4c !important;
 }
 
 .line.chart .dot {

@@ -476,6 +476,9 @@ var categories = [
     {name: "#1000km2014", values: [1], category: "Politique"}
 ];
 
+var color = d3.scale.ordinal()
+	.range(['#e06666', '#aad4e5', '#eb974f', '#75a2cb', '#65b9ab']);
+
 var hashtags = moby.init({
     containerSelector: '#visu-bulle'
 })
@@ -486,7 +489,8 @@ var hashtags = moby.init({
         labelRadiusThreshold: 15,
         labelFormatter: function(d) {
             return d.name;
-        }
+        },
+        colors: color
     })
     .render(categories);
 
@@ -511,7 +515,8 @@ var retweets = moby.init({
 })
     .setConfig({
         type: 'bar',
-        colorByKey: 'category'
+        colorByKey: 'category',
+        colors: color
     })
     .render(dataRetweets);
 
