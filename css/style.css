@@ -57,7 +57,6 @@ h1 {
    font-size: 1.6em;
    line-height: 1em;
    letter-spacing: -1px;
-   text-shadow: 2px 2px 6px #000;
 }
 
 p.intro {
@@ -87,7 +86,7 @@ p {
 }
 
 h2 {
-	 font-family: "mf-rubrik-202426";
+	 font-family: "Rubrik";
 	 margin: 0px 0px 0.931em 0px;
 	 text-transform: uppercase;
 	 padding: 20px 0px 0px 0px;
@@ -287,11 +286,11 @@ img.square {
 
 .header {
 	 text-align: center;
-	 padding: .1em 0;
+	 padding: 4em 0;
 	 background-color: rgba(0, 0, 0, 1);
 	 background-image: url(http://ici.radio-canada.ca/nouvelles/infographies/deniscoderre_tweets/06193320.jpg);
 	 background-position: right center;
-	 height: 90px;
+	 height: 220px;
 	 background-size: 123%;
 	 background-attachment: local;
 	 background-repeat: no-repeat;
@@ -399,7 +398,8 @@ img.standard {
 blockquote {
 	 text-align: left;
 	 line-height: 22px;
-	 font-family: "Georgia W01 Italic";
+	 font-family: "Georgia";
+	 font-style: italic;
 	 font-size: 20px;
 	 color: rgba(0, 0, 0, 1);
 	 padding: 5px 0px 0px 0px;
@@ -505,7 +505,7 @@ section.slice {
 }
 
 .header {
-	 height: 280px;
+	 height: 410px;
 }
 
 p.intro {
@@ -551,7 +551,7 @@ h2 {
 }
 
 .header {
-	 height: 280px;
+	 height: 410px;
 }
 
 h1 {
