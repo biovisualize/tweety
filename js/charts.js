@@ -477,8 +477,9 @@ var categories = [
 ];
 
 var color = d3.scale.ordinal()
-	.range(['#e06666', '#aad4e5', '#eb974f', '#75a2cb', '#65b9ab']);
+    .range(['#e06666', '#aad4e5', '#eb974f', '#75a2cb', '#65b9ab']);
 
+var isFiltered = false;
 var hashtags = moby.init({
     containerSelector: '#visu-bulle'
 })
@@ -492,7 +493,20 @@ var hashtags = moby.init({
         },
         colors: color
     })
-    .render(categories);
+    .render(categories)
+    .on('click', function(d, e){
+        if(isFiltered) {
+            this.render(categories);
+            isFiltered = false;
+        }
+        else {
+            var dataFiltered = categories.filter(function(dB, iB){
+                return d.data.category === dB.category;
+            });
+            this.render(dataFiltered);
+            isFiltered = true;
+        }
+    });
 
 /*TODO
  -enlever avant 4 nov
