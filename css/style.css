@@ -1,3 +1,27 @@
+/* Webfont:  Rubrik-Regular */
+@font-face {
+    font-family:'Rubrik';
+	font-style:normal;
+	font-weight:400;
+	src:	url(http://www.r-c.ca/_font/Rubrik/Rubrik-Regular.eot);
+	src:	url(http://www.r-c.ca/_font/Rubrik-Regular.eot?#iefix) format("embedded-opentype"),
+			url(http://www.r-c.ca/_font/Rubrik/Rubrik-Regular.woff) format("woff"),
+			url(http://www.r-c.ca/_font/Rubrik/Rubrik-Regular.svg#Rubrik-Regular) format("svg"),
+			url(http://www.r-c.ca/_font/Rubrik/Rubrik-Regular.ttf) format("truetype")
+}
+    
+/* Webfont:  Rubrik-Light */
+@font-face {
+    font-family:'RubrikLt';
+	font-style:normal;
+	font-weight:400;
+	src:	url(http://www.r-c.ca/_font/Rubrik/Rubrik-Light.eot);
+	src:	url(http://www.r-c.ca/_font/Rubrik-Light.eot?#iefix) format("embedded-opentype"),
+			url(http://www.r-c.ca/_font/Rubrik/Rubrik-Light.woff) format("woff"),
+			url(http://www.r-c.ca/_font/Rubrik/Rubrik-Light.svg#Rubrik-Light) format("svg"),
+			url(http://www.r-c.ca/_font/Rubrik/Rubrik-Light.ttf) format("truetype")
+}
+
 body {
 	 padding: 0px 0 25px 0;
 	 font-family: "Open Sans";
@@ -23,20 +47,20 @@ article {
 }
 
 h1 {
-	 font-family: "mf-rubrik-202426";
-	 text-align: right;
-	 text-transform: capitalize;
-	 padding: 0px;
-	 color: rgba(255, 255, 255, 1);
-	 background-repeat: no-repeat;
-	 background-size: cover;
-	 font-size: 1.6em;
-	 line-height: 1em;
-	 letter-spacing: -1px;
+   font-family: 'Rubrik';
+   text-align: right;
+   text-transform: capitalize;
+   padding: 0px;
+   color: rgba(255, 255, 255, 1);
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-size: 1.6em;
+   line-height: 1em;
+   letter-spacing: -1px;
 }
 
 p.intro {
-	 font-family: "Georgia W01 Regular";
+	 font-family: "Georgia";
 	 border-top: 1px;
 	 border-bottom: 1px;
 	 padding: 0px 0px 15px 0px;
@@ -62,7 +86,7 @@ p {
 }
 
 h2 {
-	 font-family: "mf-rubrik-202426";
+	 font-family: "Rubrik";
 	 margin: 0px 0px 0.931em 0px;
 	 text-transform: uppercase;
 	 padding: 20px 0px 0px 0px;
@@ -262,11 +286,11 @@ img.square {
 
 .header {
 	 text-align: center;
-	 padding: .1em 0;
+	 padding: 4em 0;
 	 background-color: rgba(0, 0, 0, 1);
 	 background-image: url(http://ici.radio-canada.ca/nouvelles/infographies/deniscoderre_tweets/06193320.jpg);
 	 background-position: right center;
-	 height: 90px;
+	 height: 220px;
 	 background-size: 123%;
 	 background-attachment: local;
 	 background-repeat: no-repeat;
@@ -347,7 +371,7 @@ p.intromobile {
 p.soustitre {
 	 text-align: right;
 	 font-size: 1.1em;
-	 font-family: "Georgia W01 Regular";
+	 font-family: "Georgia";
 	 text-transform: inherit;
 	 color: rgba(255, 255, 255, 1);
 	 line-height: 1em;
@@ -374,7 +398,8 @@ img.standard {
 blockquote {
 	 text-align: left;
 	 line-height: 22px;
-	 font-family: "Georgia W01 Italic";
+	 font-family: "Georgia";
+	 font-style: italic;
 	 font-size: 20px;
 	 color: rgba(0, 0, 0, 1);
 	 padding: 5px 0px 0px 0px;
@@ -480,7 +505,7 @@ section.slice {
 }
 
 .header {
-	 height: 280px;
+	 height: 410px;
 }
 
 p.intro {
@@ -526,7 +551,7 @@ h2 {
 }
 
 .header {
-	 height: 280px;
+	 height: 410px;
 }
 
 h1 {
