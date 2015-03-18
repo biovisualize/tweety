@@ -492,7 +492,7 @@ var hashtags = moby.init({
             return d.name;
         },
         tooltipFormatter: function(d) {
-            return d.name + ' (' + d.values[0] + ' retweets)';
+            return d.name + ' (' + d.values[0] + ' mention' + ((d.values[0] > 1) ? 's' : '') + ')';
         },
         colors: color
     })
