@@ -16,7 +16,8 @@ div {
 .chart {
   position: relative;
   padding-bottom: 4px;
-  font-family: serif;
+  font-family: "Open Sans";
+  font-weight: 300;
 }
 
 .chart .label {
@@ -64,6 +65,7 @@ div {
   line-height: 15px;
   margin: 0px 0px 20px 0px;
   font-family: "Open Sans";
+  font-weight: 300;
 }
 
 .bar2d.chart .bar {
