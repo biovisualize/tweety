@@ -124,6 +124,39 @@ div {
   height: 400px;
 }
 
+
+#image-container {
+    clear: both;
+    
+}
+
+.visu-maire-item {
+    
+  margin-left: 3px; 
+  font-family: "Open Sans";    
+  float: left;
+  width: 130px; 
+  bottom: 0;
+}
+
+.visu-maire-nom {
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
+
+.visu-maire-ville {
+    font-size: 10px;
+    text-transform: uppercase;
+
+}
+
+.visu-maire-date {
+    font-size: 10px;
+    text-align: right;
+
+}
+
 .tweet {
   border: 1px solid silver;
   border-radius: 6px;
