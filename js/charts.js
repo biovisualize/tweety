@@ -497,13 +497,13 @@ var hashtags = moby.init({
         colors: color
     })
     .render(categories)
-    .on('click', function(d, e){
-        if(isFiltered) {
+    .on('click', function(d, e) {
+        if (isFiltered) {
             this.render(categories);
             isFiltered = false;
         }
         else {
-            var dataFiltered = categories.filter(function(dB, iB){
+            var dataFiltered = categories.filter(function(dB, iB) {
                 return d.data.category === dB.category;
             });
             this.render(dataFiltered);
@@ -511,13 +511,21 @@ var hashtags = moby.init({
         }
     });
 
-d3.selectAll('#visu-bulle-legend .legend').on('click', function(){
+d3.selectAll('#visu-bulle-legend .legend').on('click', function() {
     var that = this;
-    var dataFiltered = categories.filter(function(dB, iB){
+    var dataFiltered = categories.filter(function(dB, iB) {
         return that.innerText === dB.category;
     });
     hashtags.render(dataFiltered);
     isFiltered = true;
+});
+
+d3.select('#visu-bulle').on('click', function(a, b) {
+    if (!d3.event.target.classList.contains('bubble')) {
+        return;
+    }
+    hashtags.render(categories);
+    isFiltered = false;
 });
 
 var dataRetweets = [

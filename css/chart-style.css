@@ -74,6 +74,10 @@ div {
   font-size: 0.5em;
 }
 
+#visu-bulle {
+  cursor: pointer;
+}
+
 .bubble.chart .node {
   border: 1px solid silver;
   background-color: #fbb977;
