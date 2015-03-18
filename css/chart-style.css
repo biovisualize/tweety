@@ -81,7 +81,7 @@ div {
 }
 
 .bubble.chart .node {
-  border: 1px solid silver;
+  border: 0px solid silver;
   background-color: #fbb977;
   cursor: pointer;
 }
