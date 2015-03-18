@@ -10,7 +10,7 @@ div {
 .chart-container {
   position: relative;
   height: 400px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .chart {
@@ -77,6 +77,7 @@ div {
 .bubble.chart .node {
   border: 1px solid silver;
   background-color: #fbb977;
+  cursor: pointer;
 }
 
 .bubble.chart .value {
@@ -107,6 +108,10 @@ div {
 #visu-reponses1, #visu-reponses2 {
   width: 50%;
   float: left;
+}
+
+#visu-reponses .chart-inner-container {
+  height: 100%;
 }
 
 #visu-reponses {
@@ -154,13 +159,19 @@ div {
 }
 
 .legend-container {
-  margin-bottom: 48px;
+  margin-top: 10px;
 }
-.legend {
+
+.legend-color {
   width: 1em;
   height: 1em;
   display: inline-block;
-  margin: 0 2px 0 12px;
+  margin-right: 2px;
+}
+
+.legend {
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 @media (max-width: 1000px) {

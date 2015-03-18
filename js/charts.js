@@ -491,6 +491,9 @@ var hashtags = moby.init({
         labelFormatter: function(d) {
             return d.name;
         },
+        tooltipFormatter: function(d) {
+            return d.name + ' (' + d.values[0] + ' retweets)';
+        },
         colors: color
     })
     .render(categories)
@@ -508,9 +511,15 @@ var hashtags = moby.init({
         }
     });
 
-/*TODO
- -enlever avant 4 nov
- */
+d3.selectAll('#visu-bulle-legend .legend').on('click', function(){
+    var that = this;
+    var dataFiltered = categories.filter(function(dB, iB){
+        return that.innerText === dB.category;
+    });
+    hashtags.render(dataFiltered);
+    isFiltered = true;
+});
+
 var dataRetweets = [
     {name: "Allez les amis. Célébrons cette belle victoire de nos Glorieux en votant pour #NHL15Subban a vos posts #HabsDC. RT MASSIF SVP!!!", values: [1357], category: "Sport"},
     {name: "Ok les amis j'ai besoin de vous. Il faut voter pour #NHL15Subban RT MASSIF SVP! :)", values: [947], category: "Sport"},
@@ -530,7 +539,13 @@ var retweets = moby.init({
     .setConfig({
         type: 'bar',
         colorByKey: 'category',
-        colors: color
+        colors: color,
+        labelFormatter: function(d, i) {
+            return '<span class="label-title"> ' + d.name + '</span>';
+        },
+        tooltipFormatter: function(d, i) {
+            return '<span class="label-title"> ' + d.name + '</span><span class="label-value"> (' + d3.max(d.values) + ' retweets)</span>';
+        }
     })
     .render(dataRetweets);
 
@@ -557,12 +572,15 @@ var dataReponsesCoderre = [
 ];
 
 var reponses1 = moby.init({
-    containerSelector: '#visu-reponses1'
+    containerSelector: '#visu-reponses1 .chart-inner-container'
 })
     .setConfig({
         type: 'bubble',
         labelFormatter: function(d) {
             return d.name;
+        },
+        tooltipFormatter: function(d) {
+            return d.name + ' (' + d.values[0] + ' retweets)';
         }
     })
     .render(dataReponsesCoderre);
@@ -590,12 +608,15 @@ var dataReponses2 = [
 ];
 
 var reponses2 = moby.init({
-    containerSelector: '#visu-reponses2'
+    containerSelector: '#visu-reponses2 .chart-inner-container'
 })
     .setConfig({
         type: 'bubble',
         labelFormatter: function(d) {
             return d.name;
+        },
+        tooltipFormatter: function(d) {
+            return d.name + ' (' + d.values[0] + ' retweets)';
         }
     })
     .render(dataReponses2);
@@ -614,7 +635,7 @@ var hours = moby.init({
     .setConfig({
         type: 'bar2D',
         tooltipFormatter: function(d, i) {
-            return d.values;
+            return d.values + ' tweets';
         },
         labelFormatter: function(d, i) {
             return '<span class="label-title"> ' + d.labels[i] + '</span>';
@@ -636,7 +657,7 @@ var months = moby.init({
     .setConfig({
         type: 'bar2D',
         tooltipFormatter: function(d, i) {
-            return d.values;
+            return d.values + ' tweets';
         },
         labelFormatter: function(d, i) {
             return '<span class="label-title"> ' + d.labels[i] + '</span>';
