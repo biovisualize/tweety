@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="http://ici.radio-canada.ca/Content/component.Footer.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="http://s.radio-canada.ca/_css/modules/modules.barrepartagee.1.0.0.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="http://s.radio-canada.ca/mp/modules.socialbar.1.0.0.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://s.radio-canada.ca/_css/modules/modules.socialbar.1.0.0.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
     <script src='http://ici.radio-canada.ca/Content/generated/main.min.js'></script>
@@ -34,18 +35,19 @@
 
     <script>window.appHost = 'http://ici.radio-canada.ca';</script>
     
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="" />
+    <meta property="og:url" content="http://ici.radio-canada.ca/special/denis-coderre-montreal-twitter/" />
+    <meta property="og:title" content="@Denis Coderre : un maire et ses 140 caractères" />
     <meta name="WT.sp" content="" />
-    <meta name="Description" content="" />
+    <meta name="Description" content="Avec ses 186 000 abonnés et ses 38 000 tweets depuis 2008, Denis Coderre est l’une des personnalités politiques québécoises, voire canadiennes, les plus actives sur Twitter. De quoi parle le maire de la plus grosse ville au Québec? ICI Grand Montréal a passé au peigne fin les 4500 tweets depuis son arrivée à la mairie, le 3 novembre 2013. Portrait d’une figure politique colorée." />
     <meta name="Keywords" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
+	<meta property="og:description" content="Avec ses 186 000 abonnés et ses 38 000 tweets depuis 2008, Denis Coderre est l’une des personnalités politiques québécoises, voire canadiennes, les plus actives sur Twitter. De quoi parle le maire de la plus grosse ville au Québec? ICI Grand Montréal a passé au peigne fin les 4500 tweets depuis son arrivée à la mairie, le 3 novembre 2013. Portrait d’une figure politique colorée." />
+    <meta property="og:image" content="http://ici.radio-canada.ca/special/denis-coderre-montreal-twitter/img/coderre-thumbnail_1250.jpg" />
+	<meta content="article" property="og:type" />
     <meta name="WT.clic" content="" />
     <meta name="dc.creator" content="" />
-    <meta name="dc.description" content="" />
+    <meta name="dc.description" content="Avec ses 186 000 abonnés et ses 38 000 tweets depuis 2008, Denis Coderre est l’une des personnalités politiques québécoises, voire canadiennes, les plus actives sur Twitter. De quoi parle le maire de la plus grosse ville au Québec? ICI Grand Montréal a passé au peigne fin les 4500 tweets depuis son arrivée à la mairie, le 3 novembre 2013. Portrait d’une figure politique colorée." />
     <meta name="dc.keywords" content="" />
-    <meta name="dc.title" content="" />
+    <meta name="dc.title" content="@Denis Coderre : un maire et ses 140 caractères" />
     <meta name="src.niveau" content="" />
     <meta name="src.source" content="null" />
     <meta name="rc.region" content="" />
@@ -109,6 +111,7 @@
                         <p class="soustitre">Un maire et ses 140 caractères</p>
                     </article>
                 </div>
+				<div id="SocialBar-0"></div>
                 <article>
                     <p class="intro">Avec ses 186 000 abonnés et ses 38 000 tweets depuis 2008, Denis Coderre est l’une des personnalités politiques québécoises, voire canadiennes, les plus actives sur Twitter. De quoi parle le maire de la plus grosse ville au Québec? ICI Grand Montréal a passé au peigne fin les 4500 tweets depuis son arrivée à la mairie, le 3 novembre 2013. Portrait d’une figure politique colorée.</p>
                     <h2>DENIS CODERRE OU… «&nbsp;COACH MAYOR&nbsp;»? </h2>
@@ -249,8 +252,10 @@
                         <strong>Un projet de ICI Grand Montréal</strong>
                     </p>
                     <p class="credit-radcan"> Concept et recherche : <strong>Marie-Ève Tremblay</strong><br/>Développement : <strong>Christophe Viau, Pascal Viau, Christian Jauvin</strong><br/>Design : <strong>Santiago Salcido</strong><br/>Coordination : <strong>Claudia Timmons</strong></p>
+                    <div class="viafoura">
+                        <div class="vf-comments vf-widget" data-widget="comments" ></div>
+                    </div>
                 </article>
-
 
                 <!-- End Content-->
 
@@ -296,6 +301,35 @@
 
 
         </script>
+
+		<script language="javascript" type="text/javascript">
+			jQuery(document).ready(function () {
+				var Parameters = {
+					"url": "http://ici.radio-canada.ca/special/denis-coderre-montreal-twitter/",
+					"socialBarId": 0,
+					"title": "@Denis Coderre : un maire et ses 140 caractères",
+					"showPluck": true,
+					"showViafoura":false,
+					"showMailSharing":false,
+					"showFacebook": true,
+					"showTwitter": true,
+					"showGooglePlus": true,
+					"width":"300",
+					"thumbnail": 'http://ici.radio-canada.ca/special/denis-coderre-montreal-twitter/img/coderre-thumbnail.jpg',
+					"summary": "Avec ses 186 000 abonnés et ses 38 000 tweets depuis 2008, Denis Coderre est l’une des personnalités politiques québécoises, voire canadiennes, les plus actives sur Twitter. De quoi parle le maire de la plus grosse ville au Québec? ICI Grand Montréal a passé au peigne fin les 4500 tweets depuis son arrivée à la mairie, le 3 novembre 2013. Portrait d’une figure politique colorée.",
+					"webTrendStatsToClic": true ,
+					"webTrendEmailAction": 'wt-email',
+					"webTrendGooglePlusAction": 'wt-google',
+					"webTrendFacebookAction": 'wt-facebook',
+					"webTrendTwitterAction": 'wt-twitter',
+					"fullSocialBar": false,
+
+				};
+
+				var apiUrl = RadioCanada.SocialBar.GetApiUrl(Parameters);
+				jQuery.getScript(apiUrl, function (data, textStatus, jqxhr) { });
+			});
+		</script>
 
         <!-- from charts library -->
         <script type="text/javascript" src="lib/d3.js"></script>
