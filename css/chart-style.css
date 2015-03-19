@@ -124,6 +124,16 @@ div {
   height: 400px;
 }
 
+
+#image-container {
+  height: 350px;
+  width: 700px;
+  background-image: url("../img/cinq_maires_5col-2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
 .tweet {
   border: 1px solid silver;
   border-radius: 6px;
@@ -186,6 +196,11 @@ div {
     width: 80%;
   }
 
+  #image-container {
+    height: 350px;
+    width: 600px;
+  }
+
   .bar2d.chart .label {
     -webkit-transform: rotate(-90deg);
     -webkit-transform-origin: 0 40%;
@@ -204,5 +219,21 @@ div {
 
   #visu-bulle {
     height: 300px;
+  }
+}
+
+@media (max-width: 750px) {
+  #image-container {
+    height: 450px;
+    width: 600px;
+    background-image: url("../img/cinq_maires_3col.png");
+  }
+}
+
+@media (max-width: 600px) {
+  #image-container {
+    height: 648px;
+    width: 300px;
+    background-image: url("../img/cinq_maires_2col.png");
   }
 }
