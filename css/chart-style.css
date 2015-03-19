@@ -125,14 +125,7 @@ div {
 }
 
 
-#image-container {
-  height: 350px;
-  width: 700px;
-  background-image: url("../img/cinq_maires_5col-2.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
+
 
 .tweet {
   border: 1px solid silver;
@@ -195,11 +188,13 @@ div {
     margin: 0px auto 50px auto;
     width: 80%;
   }
+/*
 
   #image-container {
     height: 350px;
     width: 600px;
   }
+*/
 
   .bar2d.chart .label {
     -webkit-transform: rotate(-90deg);
@@ -222,18 +217,63 @@ div {
   }
 }
 
-@media (max-width: 750px) {
+#image-container {
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+@media (min-width: 800px) {
+#image-container {
+  height: 400px;
+  width: 700px;
+  padding-right: 150px;    
+  background-image: url("../img/cinq_maires_5col-2.png");
+  margin: 10px auto;    
+}
+}
+
+
+@media (max-width: 800px) {
   #image-container {
-    height: 450px;
-    width: 600px;
+    text-align: left;  
+    height: 600px;
+    width: 100%; 
     background-image: url("../img/cinq_maires_3col.png");
+    background-size: 600px 475px;
+    background-position: 0px 135px;   
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 665px) {
   #image-container {
-    height: 648px;
-    width: 300px;
+    text-align: left;  
+    height: 600px;
+    width: 100%; 
+    background-image: url("../img/cinq_maires_3col.png");
+    background-size: 600px 475px;
+    background-position: 0px 155px;  
+  }
+}
+
+@media (max-width: 620px) {
+  #image-container {
+    height: 820px;
+    width: 100%;
     background-image: url("../img/cinq_maires_2col.png");
+    background-size: 300px 648px;  
+    background-position: 100px 175px;
+    text-align: left;  
+  }
+}
+
+@media (max-width: 480px) {
+  #image-container {
+    height: 850px;
+    width: 100%;
+    background-image: url("../img/cinq_maires_2col.png");
+    background-size: 250px 540px;  
+    background-position: 0px 315px;
+    text-align: left; 
   }
 }
