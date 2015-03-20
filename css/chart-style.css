@@ -235,11 +235,12 @@ div {
 
 @media (min-width: 800px) {
 #image-container {
-  height: 670px;
+  height: 370px;
   width: 700px;    
-  background-image: url("../img/cinq_maires_3col.png");
+  background-image: url("../img/cinq_maires_5col-2.png");
+  padding-right: 150px;    
   margin: 10px auto;
-  background-position: 0px 80px;  
+  background-position: 0px -50px;  
 }
 }
 

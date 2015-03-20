@@ -22,6 +22,11 @@
 			url(http://www.r-c.ca/_font/Rubrik/Rubrik-Light.ttf) format("truetype")
 }
 
+.viafoura strong {
+	 font-size: 10px;
+	 line-height: 10px;
+}
+
 body {
 	 padding: 0px 0 25px 0;
 	 font-family: "Open Sans";
@@ -301,7 +306,7 @@ img.square {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 95%;
 }
 
 .header {
