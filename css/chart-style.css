@@ -162,8 +162,9 @@ div {
 
 .tweet .text {
   clear: both;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.3em;
+  color: rgba(22, 22, 22, 1);
 }
 
 .chart-tooltip {

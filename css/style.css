@@ -29,10 +29,6 @@
 
 body {
 	 padding: 0px 0 25px 0;
-	 font-family: "Open Sans";
-	 font-weight: 400;
-	 font-style: normal;
-	 line-height: 0px;
 	 background-color: white;
 }
 
@@ -42,19 +38,17 @@ body {
 }
 
 article {
-	 margin: 0 auto;
-	 width: 264px;
-	 -webkit-box-sizing: border-box;
-	 -moz-box-sizing: border-box;
-	 box-sizing: border-box;
-	 background-size: cover;
-	 background-attachment: local;
-	 background-repeat: no-repeat;
-	 font-family: "Open Sans";
-	 font-weight: 400;
-	 font-style: normal;
-	 line-height: 21px;
-
+   margin: 0 auto;
+   width: 264px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   background-size: cover;
+   background-attachment: local;
+   background-repeat: no-repeat;
+   font-family: "Arial";
+   font-weight: 400;
+   font-style: normal;
 }
 
 h1 {
@@ -71,39 +65,39 @@ h1 {
 }
 
 p.intro {
-	 font-family: "Georgia";
-	 border-top: 1px;
-	 border-bottom: 1px;
-	 padding: 0px 0px 15px 0px;
-	 text-align: left;
-	 border-style: solid;
-	 margin: 1.038em 0px;
-	 color: rgba(0, 0, 0, 1);
-	 border-width: 0px 0px 1px 0px;
-	 line-height: 1.3em;
-	 font-size: 1em;
-   border-color: rgba(190, 190, 190, 1);
+   border-top: 1px;
+   border-bottom: 1px;
+   padding: 0px 0px 15px 0px;
+   text-align: left;
+   margin: 1.038em 0px 0em 0px;
+   color: rgba(22, 22, 22, 1);
+   border-width: 0px;
+   line-height: 1.3em;
+   font-size: 16px;
+   font-weight: 600;
+   font-family: "Arial";
+   font-style: normal;
 }
 
 p {
-	 font-size: 16px;
-	 line-height: 22px;
-	 color: rgba(0, 0, 0, 1);
-	 margin: 0px 0px 1.421em 0px;
-	 font-family: "Open Sans";
-	 text-align: left;
-	 font-weight: 400;
-	 font-style: normal;
+   font-size: 16px;
+   line-height: 1.3em;
+   color: rgba(51, 51, 51, 1);
+   margin: 0px 0px 1.421em 0px;
+   font-family: Arial;
+   font-weight: 400;
+   font-style: normal;
+   text-align: left;
 }
 
 h2 {
-	 font-family: "Rubrik";
-	 margin: 0px 0px 0.931em 0px;
-	 text-transform: uppercase;
-	 padding: 20px 0px 0px 0px;
-	 font-size: 20px;
-	 line-height: 22px;
-	 color: rgba(0, 0, 0, 1);
+   font-family: "Rubrik";
+   margin: 0px 0px 0.931em 0px;
+   text-transform: uppercase;
+   padding: 20px 0px 0px 0px;
+   font-size: 20px;
+   line-height: 22px;
+   color: rgba(148, 148, 148, 1);
 }
 
 p.pullquote {
@@ -185,12 +179,12 @@ h3 {
 }
 
 p.description {
-  font-size: 14px;
-  line-height: 16px;
-  font-family: "Open Sans";
-  font-weight: 600;
-  font-style: normal;
-  margin: 0px 0px 5px 0px;
+   font-size: 14px;
+   line-height: 16px;
+   font-family: "Arial";
+   font-weight: 600;
+   font-style: normal;
+   margin: 0px 0px 5px 0px;
 }
 
 nav.menu-nav {
@@ -311,11 +305,11 @@ img.square {
 
 .header {
 	 text-align: center;
-	 padding: 4em 0;
+	 padding: 3em 0;
 	 background-color: rgba(0, 0, 0, 1);
 	 background-image: url(http://ici.radio-canada.ca/nouvelles/infographies/deniscoderre_tweets/06193320.jpg);
 	 background-position: right center;
-	 height: 220px;
+	 height: 180px;
 	 background-size: 123%;
 	 background-attachment: local;
 	 background-repeat: no-repeat;
@@ -394,16 +388,15 @@ p.intromobile {
 }
 
 p.soustitre {
-	 text-align: right;
-	 font-size: 1.1em;
-	 font-family: "Georgia";
-	 text-transform: inherit;
-	 color: rgba(255, 255, 255, 1);
-	 line-height: 1em;
-	 padding: 0px 0px 0px 120px;
-	 margin: 15px 0px 22.7360000610352px 0px;
-	 letter-spacing: -0.5px;
-	 border-color: inherit;
+   text-align: right;
+   font-size: 1.1em;
+   font-family: "Arial";
+   text-transform: inherit;
+   color: rgba(255, 255, 255, 1);
+   line-height: 1em;
+   padding: 0px 0px 0px 120px;
+   margin: 15px 0px 22.7360000610352px 0px;
+   border-color: inherit;
 }
 
 code {
@@ -421,13 +414,12 @@ img.standard {
 }
 
 blockquote {
-	 text-align: left;
-	 line-height: 22px;
-	 font-family: "Georgia";
-	 font-style: italic;
-	 font-size: 20px;
-	 color: rgba(0, 0, 0, 1);
-	 padding: 5px 0px 0px 0px;
+   text-align: left;
+   line-height: 22px;
+   font-family: "RubrikLt";
+   font-size: 20px;
+   color: rgba(148, 148, 148, 1);
+   padding: 5px 0px 0px 0px;
 }
 
 p.credit {
@@ -459,21 +451,6 @@ a {
 
 img {
 	 max-width: 100%;
-}
-
-p.credit-radcan {
-	 font-size: 14px;
-	 line-height: 16px;
-	 color: rgba(85, 85, 85, 1);
-	 text-align: left;
-}
-
-strong {
-	 font-family: "Open Sans";
-	 font-weight: 600;
-	 font-style: normal;
-	 font-size: 14px;
-	 line-height: 18px;
 }
 
 br {
@@ -523,6 +500,12 @@ section.slice {
 	 margin: 15px 0px 30px 0px;
 	 padding: 8px 12.23px 12.23px 12.23px;
 }
+    
+.header {
+	 height: 270px;
+	 padding: 5em 0;
+}
+
 
 } @media screen and (min-width: 768px) {
 	 article {
@@ -530,7 +513,8 @@ section.slice {
 }
 
 .header {
-	 height: 410px;
+	 height: 432px;
+	 padding: 8em 0;
 }
 
 p.intro {
@@ -576,7 +560,8 @@ h2 {
 }
 
 .header {
-	 height: 410px;
+	 height: 576px;
+	 padding: 9.5em 0;
 }
 
 h1 {
