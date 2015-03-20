@@ -72,8 +72,15 @@ div {
   background-color: #fbb977;
 }
 
+.bar2d.chart .label {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
 .bar2d.chart .label-title {
   font-size: 0.5em;
+  display: block;
 }
 
 #visu-bulle {
@@ -200,6 +207,9 @@ div {
     -webkit-transform-origin: 0 40%;
     transform: rotate(-90deg);
     transform-origin: 0;
+    margin-top: 5px;
+    margin-left: 4px;
+    text-align: left;
   }
 
   #visu-reponses1, #visu-reponses2 {
