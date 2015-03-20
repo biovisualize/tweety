@@ -78,7 +78,9 @@ div {
 
 #visu-bulle {
   cursor: pointer;
+  height: 700px;    
 }
+
 
 .bubble.chart .node {
   border: 0px solid silver;
@@ -94,9 +96,6 @@ div {
   display: none;
 }
 
-#visu-bulle {
-  height: 700px;
-}
 
 #visu-retweets {
   height: 350px;
@@ -213,7 +212,7 @@ div {
   }
 
   #visu-bulle {
-    height: 300px;
+    height: 600px;
   }
 }
 
@@ -244,6 +243,10 @@ div {
     background-size: 600px 475px;
     background-position: 0px 85px;   
   }
+    
+  #visu-bulle {
+    height: 600px;
+  }
 }
 
 /*
@@ -268,6 +271,10 @@ div {
     background-position: 100px 95px;
     text-align: left;  
   }
+    
+  #visu-bulle {
+    height: 500px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -278,5 +285,9 @@ div {
     background-size: 250px 540px;  
     background-position: 0px 165px;
     text-align: left; 
+  }
+    
+  #visu-bulle {
+    height: 250px;
   }
 }
