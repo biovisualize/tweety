@@ -106,6 +106,7 @@ div {
 
 #visu-retweets {
   height: 350px;
+  background-color: #f2f2f2;    
 }
 
 #visu-evenements {
@@ -114,7 +115,7 @@ div {
 
 #visu-horaire, #visu-mensuel {
   height: 300px;
-  border: 1px solid silver;
+/*  border: 1px solid silver;*/
 }
 
 #visu-reponses1, #visu-reponses2 {
@@ -234,12 +235,11 @@ div {
 
 @media (min-width: 800px) {
 #image-container {
-  height: 375px;
-  width: 700px;
-  padding-right: 150px;    
-  background-image: url("../img/cinq_maires_5col-2.png");
+  height: 670px;
+  width: 700px;    
+  background-image: url("../img/cinq_maires_3col.png");
   margin: 10px auto;
-  background-position: 0px -25px;  
+  background-position: 0px 80px;  
 }
 }
 
