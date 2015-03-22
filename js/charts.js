@@ -511,7 +511,7 @@ var hashtags = moby.init({
         }
     });
 
-d3.selectAll('#visu-bulle-legend .legend').on('click', function() {
+d3.selectAll('.legend').on('click', function() {
     var that = this;
     var dataFiltered = categories.filter(function(dB, iB) {
         return that.innerText === dB.category;
