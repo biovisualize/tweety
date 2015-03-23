@@ -91,7 +91,7 @@ div {
 
 .bubble.chart .node {
   border: 0px solid silver;
-  background-color: #647D87;/*couleur des bulles*/
+  background-color: #fbb977;/*couleur des bulles*/
   cursor: pointer;
 }
 
