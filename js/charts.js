@@ -658,17 +658,3 @@ var dataTweetsMonth = [
         labels: ["Nov-13", "Déc-13", "Jan-14", "Fév-14", "Mar-14", "Avr-14", "Mai-14", "Juin-14", "Juil-14", "Août-14", "Sept-14", "Oct-14", "Nov-14", "Déc-14", "Jan-15", "Fév-15"]
     }
 ];
-
-var months = moby.init({
-    containerSelector: '#visu-mensuel'
-})
-    .setConfig({
-        type: 'bar2D',
-        tooltipFormatter: function(d, i) {
-            return d.values + ' tweets';
-        },
-        labelFormatter: function(d, i) {
-            return '<span class="label-title"> ' + d.labels[i] + '</span>';
-        }
-    })
-    .render(dataTweetsMonth);
