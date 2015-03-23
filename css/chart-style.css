@@ -310,4 +310,8 @@ div {
   .legend {
     padding: 5px 5px 5px 5px;
   }
+  .bar2d.chart .label {
+    margin-left: -1px;
+  }
+
 }
