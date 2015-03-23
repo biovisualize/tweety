@@ -457,6 +457,10 @@ br {
 	 text-align: left;
 }
 
+.italic{
+    font-style: italic;
+}
+
 @media screen and (min-width: 320px) {
 	 p.intromobile {
 	 color: rgba(0, 0, 0, 1);
