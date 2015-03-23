@@ -514,7 +514,7 @@ var hashtags = moby.init({
 d3.selectAll('.legend').on('click', function() {
     var that = this;
     var dataFiltered = categories.filter(function(dB, iB) {
-        return that.innerText === dB.category;
+        return that.textContent === dB.category;
     });
     hashtags.render(dataFiltered);
     isFiltered = true;
@@ -650,11 +650,3 @@ var hours = moby.init({
         }
     })
     .render(dataTweetsHour);
-
-var dataTweetsMonth = [
-    {
-        name: 'Tweets par mois',
-        values: [128, 181, 177, 362, 311, 297, 441, 336, 251, 200, 306, 343, 303, 268, 349, 231, ],
-        labels: ["Nov-13", "Déc-13", "Jan-14", "Fév-14", "Mar-14", "Avr-14", "Mai-14", "Juin-14", "Juil-14", "Août-14", "Sept-14", "Oct-14", "Nov-14", "Déc-14", "Jan-15", "Fév-15"]
-    }
-];
