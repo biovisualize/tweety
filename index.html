@@ -124,15 +124,21 @@
                     
                     <h2>DENIS CODERRE OU… «&nbsp;<span class="italic">COACH MAYOR</span>&nbsp;»? </h2>
                     <p>Si Denis Coderre est connu sur ce réseau social, ce n’est pas uniquement pour son profil politique. Partisan inconditionnel du Canadien, le maire ne ménage pas les 140 caractères lors des matchs. Certains le surnomment même «&nbsp;<span class="italic">coach mayor</span>&nbsp;». Avec raison, puisque parmi les cinq mots-clics les plus souvent utilisés par le maire, trois sont en lien avec le hockey. </p>
-<!--                 <div id=visu-bulle-wrapper>-->
+<!--                    cet élément apparaîtra seulement sur l'application mobile-->
+                    <div id="lien_mobile"><a href="http://ici.radio-canada.ca/special/denis-coderre-montreal-twitter/">Cliquer ici</a> pour profiter pleinement de l'expérience mobile</div>
+
                     <p class="description">Mots-clics les plus souvent utilisés<br/></p>
 
                     <div class="legend-container" id="visu-bulle-legend">
+                        <div id="visu-bulle-filtre">Cliquer sur la légende pour filtrer par catégorie</div>
+                        
                         <span class="legend" style="background-color:#e06666">Sport</span>
                         <span class="legend"  style="background-color:#aad4e5">Politique</span>
                         <span class="legend" style="background-color:#65b9ab">Culture</span>
                         <span class="legend"  style="background-color:#75a2cb">Cause</span>
                         <span class="legend" style="background-color:#eb974f">Humeur</span>
+                        <span class="legend" style="background-color:#f2f2f2">Tout</span>
+                        
                     </div>
 
                     <div class="chart-container" id="visu-bulle"></div>
@@ -175,11 +181,11 @@
                     <br/>
                     <div id="visu-reponses">
                         <div class="chart-container" id="visu-reponses1">
-                            <p class="description">Denis Coderre</p>
+                            Denis Coderre
                             <div class="chart-inner-container"></div>
                         </div>
                         <div class="chart-container" id="visu-reponses2">
-                            <p class="description">Caroline St-Hilaire</p>
+                            Caroline St-Hilaire
                             <div class="chart-inner-container"></div>
                         </div>
                     </div>
@@ -348,7 +354,18 @@
 
 				var apiUrl = RadioCanada.SocialBar.GetApiUrl(Parameters);
 				jQuery.getScript(apiUrl, function (data, textStatus, jqxhr) { });
-                $('.single-item').slick();
+                $('#lien_mobile').remove();
+                $("#visu-bulle").on("mouseover", function(){
+                    if (window.event.clientX > 200){
+                     $( "#visu-bulle .chart-tooltip" ).css( "margin-left", "-150px" );
+                    }
+                    else{
+                     $( "#visu-bulle .chart-tooltip" ).css( "margin-left", "-20px" );
+                    }
+                    
+                
+                });
+
 			});
 		</script>
 

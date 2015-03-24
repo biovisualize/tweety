@@ -511,13 +511,21 @@ var hashtags = moby.init({
         }
     });
 
+
+
+
 d3.selectAll('.legend').on('click', function() {
-    var that = this;
-    var dataFiltered = categories.filter(function(dB, iB) {
-        return that.textContent === dB.category;
-    });
-    hashtags.render(dataFiltered);
-    isFiltered = true;
+    if (d3.event.target.textContent === "Tout"){
+        hashtags.render(categories);
+    }
+    else{
+        var that = this;
+        var dataFiltered = categories.filter(function(dB, iB) {
+            return that.textContent === dB.category;
+        });
+        hashtags.render(dataFiltered);
+        isFiltered = true;
+    }
 });
 
 d3.select('#visu-bulle').on('click', function(a, b) {

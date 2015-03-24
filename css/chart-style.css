@@ -88,11 +88,16 @@ div {
   height: 700px;    
 }
 
+#visu-bulle-filtre{
+    color:#a2a1a1;
+    font-size: 12px;
+
+}
 
 .bubble.chart .node {
   border: 0px solid silver;
   background-color: #fbb977;/*couleur des bulles*/
-  cursor: pointer;
+/*  cursor: pointer;*/
 }
 
 .bubble.chart .value {
@@ -122,6 +127,13 @@ div {
 #visu-reponses1, #visu-reponses2 {
   width: 50%;
   float: left;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial";
+  font-weight: 600;
+  font-style: normal;
+  margin: 0px 0px 5px 0px;
 }
 
 #visu-reponses .chart-inner-container {
@@ -168,13 +180,28 @@ div {
   color: rgba(22, 22, 22, 1);
 }
 
+
+
 .chart-tooltip {
   background-color: rgba(242, 242, 242, 1);
   border-radius: 5px;
   padding: 4px;
   line-height: 120%;    
-  margin-top: -30px;
-  margin-left: 5px;
+  margin-top: -20px;
+  margin-left: -60px;
+  max-width: 200px;    
+}
+
+#visu-bulle .chart-tooltip {   
+  margin-top: -45px;
+  margin-left: -20px;
+  max-width: 80%;    
+}
+
+#visu-retweets .chart-tooltip {   
+  margin-top: -45px;
+  margin-left: 10px;
+  max-width: 100%;
 }
 
 .legend-container {
@@ -293,6 +320,10 @@ div {
   #visu-bulle {
     height: 500px;
   }
+      .legend {
+    padding: 5px 5px 5px 5px;
+    line-height: 35px;  
+  }
 }
 
 @media (max-width: 480px) {
@@ -309,6 +340,7 @@ div {
   } 
   .legend {
     padding: 5px 5px 5px 5px;
+    line-height: 35px;  
   }
   .bar2d.chart .label {
     margin-left: -1px;

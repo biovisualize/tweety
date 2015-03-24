@@ -187,6 +187,10 @@ p.description {
    margin: 0px 0px 5px 0px;
 }
 
+#lien_mobile{
+    margin-bottom: 30px;
+}
+
 nav.menu-nav {
 	 margin: 0 auto;
 	 height: 45px;
