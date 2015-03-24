@@ -10,7 +10,7 @@ div {
 .chart-container {
   position: relative;
   height: 400px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .chart {
@@ -88,6 +88,8 @@ div {
 }
 */
 
+#
+
 .bar2d.chart .label {
   width: 20px;
   height: 20px;
@@ -130,6 +132,7 @@ div {
 #visu-retweets {
   height: 350px;
   background-color: #f2f2f2;
+  margin-bottom: 20px;
 
 }
 
@@ -145,6 +148,7 @@ div {
 #visu-reponses1, #visu-reponses2 {
   width: 50%;
   float: left;
+  margin-bottom: 40px;
 }
 
 #visu-reponses .chart-inner-container {
@@ -285,13 +289,14 @@ div {
 
 @media (min-width: 1100px) {
 #image-container {
-  height: 505px;
+  height: 435px;
   width: 100%;    
   background-image: url("../img/cinq_maires_5col_700x435-hd.png");
   background-size: 700px 435px;    
   background-position: center;
   padding-right: 200px;
-  padding-top: 45px
+  padding-top: 0px;
+  margin-bottom: 10px;
 }
 }
 
@@ -348,7 +353,7 @@ div {
     background-image: url("../img/cinq_maires_2col_250x590-hd.png");
     background-size: 250px 590px;
     background-position: center bottom;
-    margin-bottom: 20px;  
+    margin-bottom: 10px;  
   }
     
   #visu-bulle {
