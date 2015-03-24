@@ -90,14 +90,18 @@ p {
    text-align: left;
 }
 
+strong {
+    font-weight: bold
+}
+
 h2 {
-   font-family: "Rubrik";
+   font-family: "Arial";
    margin: 0px 0px 0.931em 0px;
-   text-transform: uppercase;
    padding: 20px 0px 0px 0px;
-   font-size: 20px;
-   line-height: 22px;
-   color: rgba(148, 148, 148, 1);
+   font-size: 23px;
+   line-height: 25px;
+   font-weight: bold;
+   color: #333333;
 }
 
 p.pullquote {
@@ -179,16 +183,23 @@ h3 {
 }
 
 p.description {
-   font-size: 14px;
-   line-height: 16px;
    font-family: "Arial";
    font-weight: 600;
    font-style: normal;
-   margin: 0px 0px 5px 0px;
+   line-height: 18px;
+   margin: 0px 0px 15px 0px;
 }
 
-#lien_mobile{
-    margin-bottom: 30px;
+p.description_n2 {
+   font-size: 14px;
+   font-weight: bold;
+   text-transform: uppercase
+   margin: 0px 0px 8px 0px;
+}
+
+p.description_n3 {
+   font-size: 12px;
+   margin: 0px 0px 8px 0px;
 }
 
 nav.menu-nav {
@@ -393,14 +404,13 @@ p.intromobile {
 
 p.soustitre {
    text-align: right;
-   font-size: 1.1em;
-   font-family: "Arial";
-   text-transform: inherit;
+   font-size: 1em;
+   font-family: "RubrikLt";
+   text-transform: uppercase;
    color: rgba(255, 255, 255, 1);
    line-height: 1em;
    padding: 0px 0px 0px 120px;
    margin: 15px 0px 22.7360000610352px 0px;
-   border-color: inherit;
 }
 
 code {
@@ -543,7 +553,7 @@ h1 {
 }
 
 p.soustitre {
-	 font-size: 24px;
+	 font-size: 20px;
 }
 
 p {
@@ -579,7 +589,7 @@ h1 {
 }
 
 p.soustitre {
-	 font-size: 1.7em;
+	 font-size: 1.5em;
 	 line-height: 1em;
 	 letter-spacing: 0px;
 	 margin: 30px 0px 22.7360000610352px 0px;
@@ -598,5 +608,3 @@ h2 {
 p.intro {
 	 padding: 15px 0px 35px 0px;
 }
-
-} 

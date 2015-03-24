@@ -10,14 +10,15 @@ div {
 .chart-container {
   position: relative;
   height: 400px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .chart {
   position: relative;
 /*  padding-bottom: 4px;*/
-  font-family: "Open Sans";
-  font-weight: 300;
+  font-family: "Arial";
+  font-weight: 200;
+  color: #000000
 }
 
 .chart .label {
@@ -25,7 +26,7 @@ div {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: "Open Sans";
+  font-family: "Arial";
 }
 
 .chart .label-text {
@@ -56,20 +57,20 @@ div {
 }
 
 .bar.chart .label {
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding: 0 0 0 10px;
 }
 
 .bar.chart .label-title {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 15px;
   margin: 0px 0px 20px 0px;
-  font-family: "Open Sans";
+  font-family: "Arial";
   font-weight: 300;
 }
 
 .bar2d.chart .bar {
-  background-color: #fbb977;
+  background-color: #e6e6e6;
 }
 
 .bar2d.chart .label {
@@ -88,20 +89,15 @@ div {
   height: 700px;    
 }
 
-#visu-bulle-filtre{
-    color:#a2a1a1;
-    font-size: 12px;
-
-}
 
 .bubble.chart .node {
   border: 0px solid silver;
-  background-color: #fbb977;/*couleur des bulles*/
-/*  cursor: pointer;*/
+  background-color: #d9d9d9;
+  cursor: pointer;
 }
 
 .bubble.chart .value {
-  font-size: 0.5em;
+  font-size: 0.4em;
 }
 
 .bubble.chart .top {
@@ -127,13 +123,6 @@ div {
 #visu-reponses1, #visu-reponses2 {
   width: 50%;
   float: left;
-  text-align: center;
-  font-size: 14px;
-  line-height: 16px;
-  font-family: "Arial";
-  font-weight: 600;
-  font-style: normal;
-  margin: 0px 0px 5px 0px;
 }
 
 #visu-reponses .chart-inner-container {
@@ -150,6 +139,7 @@ div {
 .tweet {
   border: 1px solid silver;
   border-radius: 6px;
+  background-color: #f7f7f7;
   padding: 10px;
   font-size: 12px;
   line-height: 14px;
@@ -167,6 +157,7 @@ div {
 
 .tweet .avatar, .tweet .handle {
   float: left;
+    color: #666666;
 }
 
 .tweet .handle {
@@ -177,31 +168,19 @@ div {
   clear: both;
   font-size: 1.2em;
   line-height: 1.3em;
-  color: rgba(22, 22, 22, 1);
+  color: #333333;
 }
-
-
 
 .chart-tooltip {
-  background-color: rgba(242, 242, 242, 1);
-  border-radius: 5px;
-  padding: 4px;
-  line-height: 120%;    
-  margin-top: -20px;
-  margin-left: -60px;
-  max-width: 200px;    
-}
-
-#visu-bulle .chart-tooltip {   
-  margin-top: -45px;
-  margin-left: -20px;
-  max-width: 80%;    
-}
-
-#visu-retweets .chart-tooltip {   
-  margin-top: -45px;
-  margin-left: 10px;
-  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: -30px;
+  margin-left: 5px;
+  line-height: 1.3em;
+  font-size: .9em;
+  color: #333333;
+  border: 1px solid #cccccc;
 }
 
 .legend-container {
@@ -222,6 +201,7 @@ div {
   padding: 10px 10px 10px 10px;
   height: 35px;
   line-height: 35px;
+  font-size: 14px
 }
 
 @media (max-width: 1000px) {
@@ -271,8 +251,8 @@ div {
 #image-container {
   height: 505px;
   width: 100%;    
-  background-image: url("../img/cinq_maires_3col_600x475-hd.png");
-  background-size: 600px 475px;    
+  background-image: url("../img/cinq_maires_5col_700x435-hd.png");
+  background-size: 700px 435px;    
   padding-right: 150px;
   background-position: center;
 }
@@ -320,10 +300,6 @@ div {
   #visu-bulle {
     height: 500px;
   }
-      .legend {
-    padding: 5px 5px 5px 5px;
-    line-height: 35px;  
-  }
 }
 
 @media (max-width: 480px) {
@@ -340,7 +316,6 @@ div {
   } 
   .legend {
     padding: 5px 5px 5px 5px;
-    line-height: 35px;  
   }
   .bar2d.chart .label {
     margin-left: -1px;
