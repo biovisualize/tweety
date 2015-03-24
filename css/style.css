@@ -195,6 +195,7 @@ p.description_n2 {
    font-weight: bold;
    text-transform: uppercase
    margin: 0px 0px 8px 0px;
+   text-align: center;
 }
 
 p.description_n3 {
@@ -537,7 +538,7 @@ section.slice {
 }
 
 p.intro {
-	 margin: 18px 0px 30px 0px;
+	 margin: 18px 0px 10px 0px;
 	 padding: 15px 0px 25px 0px;
 	 line-height: 1.3em;
 	 font-size: 1.3em;
@@ -607,5 +608,5 @@ h2 {
 }
 
 p.intro {
-	 padding: 15px 0px 35px 0px;
+	 padding: 15px 0px 25px 0px;
 }
