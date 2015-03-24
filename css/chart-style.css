@@ -75,6 +75,10 @@ div {
 
 .bar2d.chart .bar:hover {
   background-color: #cc0000;
+
+}
+
+.bar2d.chart .label:hover{
   color: white;
 }
 
@@ -91,6 +95,7 @@ div {
 }
 
 .bar2d.chart .label-title {
+  height: 20px;
   font-size: 0.5em;
   display: block;
 }
